@@ -41,7 +41,7 @@ main#container {
 
 /* @keyframes firstAnimation {
     0% {
-        transform: scaleY(2) scaleX(2);
+        transform: scaleY(1.5) scaleX(1.5);
     }
     100% {
         transform: scaleZ(1) scaleX(1);
