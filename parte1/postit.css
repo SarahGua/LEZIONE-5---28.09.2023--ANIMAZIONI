@@ -19,6 +19,14 @@ main#container {
     padding: 1em;
 }
 
+.post-dx {
+    transform: rotate(-8deg);
+}
+
+.post-sx {
+    transform: rotate(8deg);
+}
+
 .postit{
     width: 21%;
     height: 36%;
@@ -28,15 +36,15 @@ main#container {
     justify-content: center;
     align-items: center;
     box-shadow: 3px -9px 27px -3px rgba(0,0,0,0.7) inset, 0px 6px 6px 0px rgba(0,0,0,0.23);
-    /* animation: firstAnimation 3s linear both; */
+    animation: firstAnimation 3s linear both;
 }
 
 /* @keyframes firstAnimation {
     0% {
-        transform: scaleZ(1);
+        transform: scaleY(2) scaleX(2);
     }
     100% {
-        transform: scaleZ(2);
+        transform: scaleZ(1) scaleX(1);
     }
 } */
 
@@ -49,13 +57,7 @@ article.postit h1 {
     font-size: 1.5em;
 }
 
-.post-dx {
-    transform: rotate(-8deg);
-}
 
-.post-sx {
-    transform: rotate(8deg);
-}
 
 .post-1, .post-5, .post-7{
     background-color: #fbfbc9;
