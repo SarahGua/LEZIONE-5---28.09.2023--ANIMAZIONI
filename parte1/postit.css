@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Indie+Flower&family=Lexend:wght@300;500&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;500;600;700&family=Outfit:wght@400;700&family=Poppins:wght@300;400;500&family=Prata&family=Roboto+Condensed&family=Rubik:wght@400;500&family=Ubuntu:wght@400;500;700&family=Zilla+Slab:wght@400;600&display=swap');
+
 main#container {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Indie Flower', cursive;
 }
 
 #postit-section{
@@ -36,25 +38,67 @@ main#container {
     justify-content: center;
     align-items: center;
     box-shadow: 3px -9px 27px -3px rgba(0,0,0,0.7) inset, 0px 6px 6px 0px rgba(0,0,0,0.23);
-    animation: firstAnimation 3s linear both;
+    
 }
 
-/* @keyframes firstAnimation {
+.post-1 {
+    animation: firstAnimationSx 3s linear both;
+}
+.post-2 {
+    animation: firstAnimationSx 3s linear 0.5s both;
+}
+.post-3 {
+    animation: firstAnimationDx 3s linear 1s both;
+}
+.post-4 {
+    animation: firstAnimationSx 3s linear 1.5s both;
+}
+.post-5 {
+    animation: firstAnimationDx 3s linear 2s both;
+}
+.post-6 {
+    animation: firstAnimationDx 3s linear 2.5s both;
+}
+.post-7 {
+    animation: firstAnimationSx 3s linear 3s both;
+}
+.post-8 {
+    animation: firstAnimationDx 3s linear 3.5s both;
+}
+
+@keyframes firstAnimationSx {
     0% {
-        transform: scaleY(1.5) scaleX(1.5);
+        transform: scaleY(10) scaleX(10);
+        opacity: 0;
     }
     100% {
         transform: scaleZ(1) scaleX(1);
+        opacity: 1;
+        transform: rotate(-8deg)
     }
-} */
+}
+
+@keyframes firstAnimationDx {
+    0% {
+        transform: scaleY(10) scaleX(10);
+        opacity: 0;
+    }
+    100% {
+        transform: scaleZ(1) scaleX(1);
+        opacity: 1;
+        transform: rotate(8deg)
+    }
+}
 
 article.postit p {
-    font-size: 1.2em;
+    font-size: 1.8em;
     margin-top: 1em;
+    text-align: center;
 }
 
 article.postit h1 {
-    font-size: 1.5em;
+    font-size: 2.3em;
+    font-weight: bold;
 }
 
 
@@ -69,8 +113,6 @@ article.postit h1 {
 .post-3, .post-6 {
     background-color: #c2c3ec;
 } 
-
-
 
 .postit:hover {
     transform: scale(1.2);

@@ -20,11 +20,16 @@ div#testoAlternato {
     padding: 1em;
     font-size: 1.5em;
     font-weight: bold;
+    width: 20em;
 }
 
 span.parole i {
     color: darkblue;
     position: absolute;
+}
+
+i {
+    padding-left: 0.5em;
 }
 
 
